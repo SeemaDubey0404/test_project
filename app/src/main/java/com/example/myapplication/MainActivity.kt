@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // get reference to button
-        val btnClickMe = findViewById<Button>(R.id.btn_click_me)
-        val textView = findViewById<TextView>(R.id.text_view)
+        val btnClickMe = findViewById(R.id.button) as Button
+        val textView = findViewById(R.id.textView) as TextView
         var timesClicked = 0
         // set on-click listener
         btnClickMe.setOnClickListener {
