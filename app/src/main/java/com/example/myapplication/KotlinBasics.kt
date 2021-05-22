@@ -143,5 +143,80 @@ fun main() {
         z++
     }
     println("\n while loop is done")
+
+//TODO WRITE A While loop to print every second value decending from 100 to 0, like 100. 98,96...
+
+    var y = 100
+    while (y >= 0) {
+        print("$y")
+        y -= 2
+    }
+    println("\n while loop is done")
+
+
+//TODO write a do while loop
+//do while runs once always without checking the condition
+    var d = 15
+    do {
+        print("$d")
+        d++
+    } while (d <= 10)
+    println("\n do while loop is done")
+
+//another example for do while loop
+    var felTtemp = "cold"
+    var roomTemp = 10
+
+    while (felTtemp == "cold") {
+        roomTemp++
+        if (roomTemp >= 20) {
+            felTtemp = "comfy"
+            println("it is comfy now")
+        }
+    }
+//TODO Learn for loop
+    for (num in 1..10) {
+        print("$num")
+    }
+    for (j in 1 until 10) {
+        print("$j ")
+    }
+    for (k in 10 downTo 1) {
+        print("$k")
+    }
+    for (m in 10 downTo 1 step 2) { // same as   for ( m  1.untill(10))
+        print("$m")
+    }
+
+    //TODO write a for loop that runs from 0-10000, once its at 9 it should write "ITS over 9001
+    var o = 0
+    for (o in 0..10000) {
+        if (o == 9001) {
+            print("its over 9")
+        }
+    }
+    // TODO: 5/22/2021  *write a while loop the checks the humidity(not the humidity level) the variable humiditylevel starts
+    //  at 80 , the variablehumidity is initialized with humid, if it is humid, it
+    // should reduce the humidity level by 5 and print humidity reduced
+    //  once the humidity is below 60 it should print its comfy now and set the humidity to comfy
+
+    var humidityLevel = 80
+    var humidity = "humid"
+    while (humidity == "humid") {
+        humidityLevel -= 5
+        println("humidity decreased")
+        print("\n$humidityLevel")
+        if (roomTemp < 60) {
+            humidity = "comfy"
+            println("\n it is comfy now")
+        }
+    }
+    //working with functions
+    myfunction();
+
 }
-//TODO WRITE A While loop to
+
+
+
+
+
